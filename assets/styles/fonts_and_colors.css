@@ -19,3 +19,11 @@
     src: url(assets\fonts\palanquin-v17-latin-700.woff2) format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+
+:root {
+    --primary-color: #E76C1F;
+    --secondary-color: #363534;
+    --Tertiary-color: #FDEADC;
+    --white-color: #FFFFFF;
+}
