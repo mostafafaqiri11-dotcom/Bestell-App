@@ -71,7 +71,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 0 45px;
+    padding: 0 40px;
     position: relative;
     z-index: 20;
 }
@@ -82,7 +82,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-left: 74px;
+    margin-left: 79px;
 }
 
 .site_header_menu {
@@ -93,17 +93,11 @@ body {
     margin-right: 0;
 }
 
-
-/* =========================
-   HEADER
-   ========================= */
-
 .header_home {
     width: min(1440px, 100%);
     min-height: auto;
     margin: 0 auto;
-    position: relative;
-    top: -59px;
+    margin-top: -65px;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -120,16 +114,13 @@ body {
 .header_home_burger_logo {
     width: 200px;
     height: 200px;
-    position: relative;
     z-index: 2;
-    top: -127px;
+    margin-top: -127px;
 }
 
 .header_home_title {
     height: auto;
     width: min(872px, 90%);
-    position: relative;
-    top: -125px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,18 +161,18 @@ body {
     color: var(--secondary-color);
 }
 
-
-/* =========================
-   MAIN
-   ========================= */
-
 .main {
     width: 100%;
     max-width: 1440px;
     height: auto;
     margin: 0 auto;
-    position: relative;
-    top: -155px;
+    display: grid;
+    grid-template-columns: 1fr 435px;
+    gap: 32px;
+    align-items: start;
+    margin-top: 50px;
+    column-gap: 0;
+    row-gap: 0;
 }
 
 .main_article {
@@ -193,6 +184,20 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 70px;
+    grid-column: 1 / -1;
+    margin-top: -799px;
+}
+
+.main_aside_basket {
+    grid-column: 2;
+    grid-row: 1;
+    position: sticky;
+    top: 0;
+    width: 435px;
+    height: 794px;
+    background-color: var(--secondary-color);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 
 .main_article_menu {
@@ -205,16 +210,10 @@ body {
     flex-direction: column;
 }
 
-
-/* =========================
-   CATEGORY HEADER
-   ========================= */
-
 .main_article_menu_header {
     width: 100%;
     height: 91px;
-    position: relative;
-    top: -63px;
+    margin-top: -63px;
 }
 
 .main_article_menu_header_title {
@@ -229,6 +228,7 @@ body {
     top: 72px;
     z-index: 2;
     position: relative;
+    margin-top: -31px;
 }
 
 .main_article_menu_header_title_title {
@@ -254,17 +254,14 @@ body {
 }
 
 
-/* =========================
-   MENU CONTENT
-   ========================= */
-
 .main_article_menu_content {
     width: min(713px, calc(100% - 40px));
     height: auto;
     margin: 0 auto;
+    padding-top: 75px;
     position: relative;
-    top: 50px;
-    left: 0;
+    left: -119px;
+    margin-left: 119px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -376,9 +373,7 @@ body {
 }
 
 
-/* =========================
-   FOOTER
-   ========================= */
+
 
 .footer {
     font-family: 'Palanquin', sans-serif;
@@ -388,17 +383,15 @@ body {
     line-height: 120%;
     letter-spacing: 0;
     color: var(--white-color);
-
     width: 100%;
     min-height: 128px;
     height: 128px;
     background-color: var(--primary-color);
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
+    margin-top: 70px;
 }
 
 .footer_container {
@@ -411,9 +404,6 @@ body {
 }
 
 
-/* ==================================================
-   TABLET
-   ================================================== */
 
 @media (max-width: 1024px) {
 
