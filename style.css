@@ -127,7 +127,7 @@ body {
     flex-direction: column;
 }
 
-.header_hoem_home_title_logos {
+.header_home_title_logos {
     height: 75px;
     width: 100%;
     display: flex;
@@ -240,7 +240,7 @@ body {
     align-items: center;
 }
 
-.main_article_menu_header_title_title h3 {
+.main_article_menu_header_title_title h2 {
     font-family: Palanquin, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -259,8 +259,6 @@ body {
     height: auto;
     margin: 0 auto;
     padding-top: 75px;
-    position: relative;
-    left: -119px;
     margin-left: 119px;
     display: flex;
     flex-direction: column;
@@ -345,6 +343,18 @@ body {
     flex-direction: column;
 }
 
+.main_article_menu_content_slection_detail_price_added {
+    width: 74px;
+    min-width: 74px;
+    height: 107px;
+    transition: width 0.5s ease-in-out,
+        min-width 0.5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
 .main_article_menu_content_slection_detail_price_text {
     font-family: Palanquin, sans-serif;
     font-weight: 600;
@@ -361,7 +371,25 @@ body {
     height: 30px;
     border-radius: 20px;
     border: none;
+}
+
+.main_article_menu_content_slection_detail_price_button_added {
+    width: 74px;
+    height: 29px;
+    border-radius: 20px;
+    border: none;
+}
+
+.main_article_menu_content_slection_detail_price_button:not(.main_article_menu_content_slection_detail_price_button_added):hover {
+    width: 115px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.main_article_menu_content_slection_detail_price_button_text {
     font-family: Palanquin, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -370,7 +398,43 @@ body {
     letter-spacing: 0;
     text-align: center;
     color: var(--secondary-color);
+    padding: 1px;
 }
+
+.main_article_menu_content_slection_detail_price_button_text:hover {
+    font-family: Palanquin, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.main_article_menu_content_slection_detail_price_button_text_added {
+    font-family: Palanquin, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--primary-color);
+    animation: added 0.5s ease-in-out;
+}
+
+@keyframes added {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
 
 
 
