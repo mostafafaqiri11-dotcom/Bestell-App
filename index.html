@@ -8,69 +8,186 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/styles/fonts_and_colors.css">
     <script src="script.js" defer></script>
-
 </head>
 
 <body>
-    <header class="site_header">
-        <nav class="site_header_nav">
-            <nav class="site_header_inline">
-                <img class="site_header_logo" src="assets/icons/Logo 02.svg">
-                <img class="site_header_menu" src="assets/icons/menu.svg">
-            </nav>
-        </nav>
-        <section class="header_home">
-            <img class="header_home_image" src="assets\image\header photo.svg" alt="">
-            <img class="header_home_burger_logo" src="assets\image\logo.svg" alt="">
-            <div class="header_home_title">
-                <div class="header_home_title_logos">
-                    <img class="header_home_title_logos_logo1" src="assets\image\BurgerHouse.svg" alt="">
-                    <img class="header_home_title_logos_logo2" src="assets\image\Frame 28.svg" alt="">
-                </div>
-                <h1 class="header_home_title_text">The best of Burgers, Pizza, and Greens, all in one great
-                    place.
-                </h1>
-            </div>
-        </section>
-    </header>
-    <main class="main">
-        <article onload="renderTemplate('id')" id="id" class="main_article">
 
-        </article>
-        <aside class="main_aside_basket">
-            <h4 class="main_aside_basket">
-                Your basket
-            </h4>
-            <div class="main_aside_basket_container">
-                <div class="main_aside_basket_container_orders">
-                    <h5 class="main_aside_basket_container_orders_title"></h5>
-                    <div class="main_aside_basket_container_orders_title_add">
-                        <img class="main_aside_basket_container_orders_title_add_img1" src="" alt="">
-                        <p class="main_aside_basket_container_orders_title_add_text"></p> 
-                        <img class="main_aside_basket_container_orders_title_add_img2" src="" alt="">                        
-                    </div>
-                    <p></p>
-                </div>
-                <p class="main_aside_basket_container_subtotal"></p>
-                <p class="main_aside_basket_container_deliveryFee"></p>
-                <p class="main_aside_basket_container_total"></p>
-                <button class="main_aside_basket_container_button"></button>
+    <header class="site_header">
+
+        <nav class="site_header_nav" aria-label="Main navigation">
+
+            <div class="site_header_inline">
+
+                <a href="index.html" class="site_header_logo"></a>
+
+                <img class="site_header_menu" src="assets/icons/menu.svg" alt="Open menu">
+
             </div>
+
+        </nav>
+
+        <section class="header_home" aria-labelledby="page-title">
+
+            <img class="header_home_image" src="assets/image/header photo.svg" alt="BurgerHouse food selection">
+
+            <img class="header_home_burger_logo" src="assets/image/logo.svg" alt="BurgerHouse Logo">
+
+            <div class="header_home_title">
+
+                <div class="header_home_title_logos">
+
+                    <img class="header_home_title_logos_logo1" src="assets/image/BurgerHouse.svg" alt="BurgerHouse">
+
+                    <img class="header_home_title_logos_logo2" src="assets/image/Frame 28.svg"
+                        alt="BurgerHouse decoration">
+
+                </div>
+
+                <h1 id="page-title" class="header_home_title_text">
+                    The best of Burgers, Pizza, and Greens, all in one great place.
+                </h1>
+
+            </div>
+
+        </section>
+
+    </header>
+
+    <main class="main">
+
+        <article id="id" class="main_article" aria-label="Food menu">
+        </article>
+
+        <aside class="main_aside_basket" aria-labelledby="basket-title">
+
+            <div class="main_aside_basket_container">
+
+                <h2 id="basket-title" class="main_aside_basket_container_title">
+                    Your basket
+                </h2>
+
+                <div class="main_aside_basket_container_order" aria-label="Items in your basket">
+
+                    <div class="main_aside_basket_container_order_section">
+
+                        <h3 class="main_aside_basket_container_order_section_title">
+                            1 x Veggie mushroom black burger
+                        </h3>
+
+                        <div class="main_aside_basket_container_order_section_add_container">
+
+                            <div class="main_aside_basket_container_order_section_add_container_items">
+
+                                <button type="button"
+                                    class="main_aside_basket_container_order_section_add_container_items_button1"
+                                    aria-label="Decrease quantity of Veggie mushroom black burger">
+                                </button>
+
+                                <p class="main_aside_basket_container_order_section_add_container_items_text1"
+                                    aria-live="polite">
+                                    1
+                                </p>
+
+                                <button type="button"
+                                    class="main_aside_basket_container_order_section_add_container_items_button2"
+                                    aria-label="Increase quantity of Veggie mushroom black burger">
+                                </button>
+
+                            </div>
+
+                            <p class="main_aside_basket_container_order_section_add_container_price">
+                                90€
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="main_aside_basket_container_text" aria-label="Order summary">
+
+                    <div class="main_aside_basket_container_text_deliveryFee">
+
+                        <p class="main_aside_basket_container_text_deliveryFee_text">
+                            Subtotal
+                        </p>
+
+                        <p class="main_aside_basket_container_text_deliveryFee_price">
+                            50€
+                        </p>
+
+                    </div>
+
+                    <div class="main_aside_basket_container_text_deliveryFee">
+
+                        <p class="main_aside_basket_container_text_deliveryFee_text">
+                            Delivery fee
+                        </p>
+
+                        <p class="main_aside_basket_container_text_deliveryFee_price">
+                            50€
+                        </p>
+
+                    </div>
+
+                    <div class="main_aside_basket_container_text_deliveryFee_strich" aria-hidden="true">
+                    </div>
+
+                    <div class="main_aside_basket_container_text_deliveryFee">
+
+                        <p class="main_aside_basket_container_text_deliveryFee_text">
+                            Total
+                        </p>
+
+                        <p class="main_aside_basket_container_text_deliveryFee_price">
+                            50€
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button onclick="openDialog()" type="button" class="main_aside_basket_container_button">
+                    Buy now (41,69€)
+                </button>
+
+            </div>
+
         </aside>
+
     </main>
+    <dialog id="dialog" class="dialog">
+
+        <button type="button" onclick="closeDialog()" class="dialog_button">
+        </button>
+
+        <div class="dialog_content">
+
+            <img class="dialog_content_caricon" src="assets/icons/carIcon.svg" alt="Dialog car icon">
+
+            <h6 class="dialog_content_title">
+                Order confirmed!
+            </h6>
+
+            <p class="dialog_content_text">
+                Your food is on the way!
+            </p>
+
+        </div>
+
+    </dialog>
     <footer class="footer">
         <div class="footer_container">
             <div class="footer_copyright">
-                <img src="assets\icons\copyright.svg" class="icon">
+                <img src="assets/icons/copyright.svg" class="icon" alt="Copyright">
                 <span class="text">2026 BurgerHouse</span>
             </div>
 
-            <span class="footer_text">Imprint</span>
-            <span class="footer_text">Cookie Preferences</span>
+            <a class="footer_text">Imprint</a>
+            <a class="footer_text">Cookie Preferences</a>
         </div>
     </footer>
-
-    
 </body>
 
 </html>

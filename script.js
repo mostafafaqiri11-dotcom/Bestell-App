@@ -283,4 +283,13 @@ function addClass(index) {
         "main_article_menu_content_slection_detail_price"
     );
 };
+
+function openDialog() {
+    let dialogRef = document.getElementById("dialog");
+    dialogRef.showModal();
+}
+function closeDialog() {
+    let dialogRef = document.getElementById("dialog");
+    dialogRef.close();
+}
 renderTemplate('id');
