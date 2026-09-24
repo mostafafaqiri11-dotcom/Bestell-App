@@ -283,13 +283,26 @@ function addClass(index) {
         "main_article_menu_content_slection_detail_price"
     );
 };
+let dialogRef = document.getElementById("dialog");
+let dialogTimer;
 
 function openDialog() {
-    let dialogRef = document.getElementById("dialog");
     dialogRef.showModal();
+
+    dialogTimer = setTimeout(() => {
+        dialogRef.close();
+    }, 3000);
 }
+
 function closeDialog() {
-    let dialogRef = document.getElementById("dialog");
+    clearTimeout(dialogTimer);
     dialogRef.close();
 }
+
+dialogRef.addEventListener("click", function (event) {
+    if (event.target === dialogRef) {
+        clearTimeout(dialogTimer);
+        dialogRef.close();
+    }
+});
 renderTemplate('id');
